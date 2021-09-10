@@ -141,6 +141,18 @@ nav ul li:nth-child(3) a::after {
   color: #6bdc83;
 }
 
+nav ul li:nth-child(1):hover a::after,
+nav ul li:nth-child(2):hover a::after,
+nav ul li:nth-child(3):hover a::after {
+  color: #ffe200;
+}
+
+nav ul li:nth-child(4):hover a::after,
+nav ul li:nth-child(5):hover a::after,
+nav ul li:nth-child(6):hover a::after {
+  background-color: #ffe200;
+}
+
 nav ul li:nth-child(4) a::after,
 nav ul li:nth-child(5) a::after,
 nav ul li:nth-child(6) a::after {
@@ -152,7 +164,6 @@ nav ul li:nth-child(6) a::after {
   position: absolute;
   top: 25px;
   right: 18px;
-  color: #6bdc83;
 }
 
 .first-section {
