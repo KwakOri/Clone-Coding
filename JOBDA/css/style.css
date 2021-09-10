@@ -94,7 +94,8 @@ nav > div {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 1120px;
+  width: 100%;
+  max-width: 1120px;
   margin: 0 auto;
 }
 
@@ -488,7 +489,8 @@ footer > div {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  width: 1120px;
+  width: 100%;
+  max-width: 1120px;
   margin: 0 auto;
   padding: 40px 0;
   border-bottom: 1px solid #595e63;
