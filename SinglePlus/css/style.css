@@ -48,7 +48,7 @@ nav {
   display: flex;
   height: 100px;
   width: 100%;
-  max-width: 1440px;
+  max-width: 1660px;
   align-items: center;
   background: #333333;
 }
@@ -618,48 +618,50 @@ nav .side_bar img {
 }
 
 footer {
-  height: 320px;
   background-color: #333333;
-  padding: 0 60px;
 }
 
-footer {
+footer > div {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  height: 320px;
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
 }
 
-footer div > img {
+footer div div > img {
   width: 220px;
 }
 
-footer .beauty {
+footer div .beauty {
   margin-bottom: 20px;
 }
 
-footer .icons {
+footer div .icons {
   width: 220px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-footer .icon {
+footer div .icon {
   width: 30px;
   height: 30px;
 }
 
-footer div {
+footer div div {
   text-align: center;
 }
 
-footer div p {
+footer div div p {
   color: white;
   font-size: 20px;
   line-height: 1.4;
 }
 
-footer div span {
+footer div div span {
   font-family: EliceDigitalBaeum_Bold;
   font-size: 20px;
   color: white;
