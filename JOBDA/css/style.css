@@ -126,10 +126,18 @@ nav ul li a {
   display: block;
   text-decoration: none;
   color: black;
-  padding-right: 30px;
-  margin-right: 20px;
+  padding: 0 30px 0 20px;
   line-height: 50px;
 }
+
+nav ul li:hover a {
+  background-color: #6bdc83;
+  color: white;
+}
+
+/* nav ul li:hover {
+  border-bottom: 1px solid #6bdc83;
+} */
 
 nav ul li:nth-child(1) a::after,
 nav ul li:nth-child(2) a::after,
@@ -137,7 +145,7 @@ nav ul li:nth-child(3) a::after {
   content: ">";
   font-size: 20px;
   position: absolute;
-  right: 10px;
+  right: 15px;
   transform: rotate(90deg);
   color: #6bdc83;
 }
@@ -145,13 +153,7 @@ nav ul li:nth-child(3) a::after {
 nav ul li:nth-child(1):hover a::after,
 nav ul li:nth-child(2):hover a::after,
 nav ul li:nth-child(3):hover a::after {
-  color: #ffe200;
-}
-
-nav ul li:nth-child(4):hover a::after,
-nav ul li:nth-child(5):hover a::after,
-nav ul li:nth-child(6):hover a::after {
-  background-color: #ffe200;
+  color: white;
 }
 
 nav ul li:nth-child(4) a::after,
@@ -164,7 +166,13 @@ nav ul li:nth-child(6) a::after {
   border-radius: 3px;
   position: absolute;
   top: 25px;
-  right: 18px;
+  right: 15px;
+}
+
+nav ul li:nth-child(4):hover a::after,
+nav ul li:nth-child(5):hover a::after,
+nav ul li:nth-child(6):hover a::after {
+  background-color: white;
 }
 
 .first-section {
