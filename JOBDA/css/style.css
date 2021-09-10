@@ -85,19 +85,40 @@ nav {
   position: sticky;
   top: 0;
   z-index: 2;
+  width: 100%;
   background-color: white;
   box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
-  width: 100%;
 }
 
-nav ul {
+nav > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   width: 1120px;
   margin: 0 auto;
+}
+
+nav div ul {
   font-size: 16px;
   display: flex;
 }
 
+nav div button {
+  width: 70px;
+  height: 30px;
+  border: 1px solid #e6e6e9;
+  background-color: white;
+  border-radius: 4px;
+}
+
+nav div button:hover {
+  background-color: #6bdc83;
+  color: white;
+  border: 1px solid #6bdc83;
+}
+
 nav ul li a {
+  position: relative;
   height: 50px;
   font-size: 15px;
   font-weight: bold;
@@ -107,6 +128,31 @@ nav ul li a {
   padding-right: 30px;
   margin-right: 20px;
   line-height: 50px;
+}
+
+nav ul li:nth-child(1) a::after,
+nav ul li:nth-child(2) a::after,
+nav ul li:nth-child(3) a::after {
+  content: ">";
+  font-size: 20px;
+  position: absolute;
+  right: 10px;
+  transform: rotate(90deg);
+  color: #6bdc83;
+}
+
+nav ul li:nth-child(4) a::after,
+nav ul li:nth-child(5) a::after,
+nav ul li:nth-child(6) a::after {
+  content: "";
+  width: 6px;
+  height: 6px;
+  background-color: #6bdc83;
+  border-radius: 3px;
+  position: absolute;
+  top: 25px;
+  right: 18px;
+  color: #6bdc83;
 }
 
 .first-section {
