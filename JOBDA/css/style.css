@@ -291,8 +291,8 @@ h4.mini-title {
 .row-box:hover {
   position: relative;
   top: -10px;
-  left: -10px;
   transition: all 0.35s;
+  box-shadow: 0 8px 10px rgba(0, 0, 0, 0.3);
 }
 
 .column-box {
@@ -393,11 +393,17 @@ h4.mini-title {
   border-radius: 110px 0 20px 0;
 }
 
+.container1 .item5,
+.container2 .item2,
+.container2 .item3 {
+  border-radius: 20px 20px 20px 0;
+}
+
 .item:hover {
   position: relative;
   top: -10px;
-  left: -10px;
   transition-property: top, left 0.35s;
+  box-shadow: 0 8px 10px rgba(0, 0, 0, 0.3);
 }
 
 .container1 .item1 {
